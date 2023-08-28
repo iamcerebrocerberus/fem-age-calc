@@ -10,10 +10,6 @@
     yearTxt,
     form;
 
-  function updateTextContent(txtElement, value) {
-    txtElement.textContent = value;
-  }
-
   function calculateAge(birthYear, birthMonth, birthDay) {
     var currentDate = new Date();
     var birthDate = new Date(birthYear, birthMonth - 1, birthDay);
@@ -66,6 +62,10 @@
     } else {
       return null;
     }
+  }
+
+  function updateTextContent(txtElement, value) {
+    txtElement.textContent = value;
   }
 
   function applyValue({ years, months, days }) {
